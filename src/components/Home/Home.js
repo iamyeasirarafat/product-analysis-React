@@ -1,8 +1,13 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 import img from '../../Assests/Images/modelImg.png'
+import GetReviews from '../../Hooks/GetReviews';
+import ReviewItem from '../ReviewItem/ReviewItem';
 
 const Home = () => {
+   const [reviews, setReviews] =  GetReviews()
+   const slicedReviews = reviews.slice(0,3)
+   
     return (
         <div>
             <Nav></Nav>
@@ -17,10 +22,13 @@ const Home = () => {
                     <img className="w-full" src={img} alt="" />
                 </div>
             </section>
-            <section className="">
-                {
-                    
+            <section className="w-11/12 mx-auto">
+                <h3 className="text-center text-5xl my-12 font-semibold text-blue-600 ">Customer's reviews</h3>
+               <div className="flex">
+               {
+                    slicedReviews.map((review => <ReviewItem key={review.id} review = {review}></ReviewItem>))
                 }
+               </div>
             </section>
         </div>
     );
