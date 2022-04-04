@@ -6,11 +6,11 @@ const Blogs = () => {
         <div className="">
             <Nav></Nav>
             <h2 className="text-5xl font-semibold text-center my-9 uppercase text-blue-500">Welcome to my <span className="text-pink-400">Blogs</span></h2>
-            <div className="md:flex w-3/4 mx-auto">
-            <div className="w-2/5  mr-20 mt-16 mb-28">
+            <div className="md:flex md:w-3/4  mx-auto">
+            <div className="md:w-2/5  md:mr-20 mt-16 md:mb-28">
                 <img className="w-11/12 m-auto rounded-lg" src='context.png'alt="" />
             </div>
-            <div className="w-3/5 mt-10">
+            <div className="md:w-3/5 ml-7 mt-10">
                 <h3 className="text-3xl font-semibold text-blue-800">What is <span className="text-pink-400">Context API</span> and how it works?</h3>
                 <p className="ml-10 my-3 text-blue-400"><small>Posted By: Yeasir Arafat</small></p>
                 <p className="text-blue-600">
@@ -20,11 +20,11 @@ const Blogs = () => {
                 
             </div>
         </div>
-            <div className="md:flex w-3/4 mx-auto">
-            <div className="w-2/5  mr-20 mt-16 mb-28">
+            <div className="md:flex md:w-3/4  mx-auto">
+            <div className="md:w-2/5  md:mr-20 mt-16 md:mb-28">
                 <img className="w-11/12 m-auto rounded-lg" src='semantic.jpg'alt="" />
             </div>
-            <div className="w-3/5 mt-10">
+            <div className="md:w-3/5 ml-7 mt-10">
                 <h3 className="text-3xl font-semibold text-blue-800">What is <span className="text-pink-400">Semantic Tags</span> ?</h3>
                 <p className="ml-10 my-3 text-blue-400"><small>Posted By: Yeasir Arafat</small></p>
                 <p className="text-blue-600">

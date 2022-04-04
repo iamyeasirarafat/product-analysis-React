@@ -25,12 +25,12 @@ const Dashboard = () => {
       <h2 className="text-center text-4xl uppercase font-semibold text-blue-600 mt-14">
         Our Monthly Sells
       </h2>
-      <div className="md:flex pt-14 w-3/4 mx-auto">
+      <div className="md:flex pt-14 w-full md:w-3/4 mx-auto">
         <div className="">
           <h2 className="text-center text-blue-500 font-semibold mb-3 text-xl">
             Month wise sell
           </h2>
-          <LineChart data={data} width={400} height={300}>
+          <LineChart data={data} width={350} height={300}>
             <Line stroke="#8884d8" type="monotone" dataKey="sell"></Line>
             <XAxis dataKey="month" />
             <YAxis></YAxis>
@@ -40,11 +40,11 @@ const Dashboard = () => {
             <Tooltip></Tooltip>
           </LineChart>
         </div>
-        <div className="ml-auto">
+        <div className="md:ml-auto">
           <h2 className="text-center text-blue-500 font-semibold mb-3 text-xl">
             invesment vs Revenue
           </h2>
-          <BarChart width={400} height={300} data={data}>
+          <BarChart width={350} height={300} data={data}>
             <CartesianGrid strokeDasharray="3 3"></CartesianGrid>
             <XAxis dataKey="month"></XAxis>
             <YAxis></YAxis>
