@@ -5,7 +5,7 @@ import GetReviews from '../../Hooks/GetReviews';
 import ReviewItem from '../ReviewItem/ReviewItem';
 
 const Home = () => {
-   const [reviews, setReviews] =  GetReviews()
+   const [reviews,] =  GetReviews()
    const slicedReviews = reviews.slice(0,3)
    
     return (
