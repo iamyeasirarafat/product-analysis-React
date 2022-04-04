@@ -23,21 +23,22 @@ const Dashboard = () => {
       <div>
           <Nav></Nav>
           <h2 className="text-center text-4xl uppercase font-semibold text-blue-600 mt-14">Our Monthly Sells</h2>
-    <div className="md:flex pt-20 w-11/12 mx-auto" >
-      <div className="mr-20">
-        <h2>Month wise sell</h2>
-        <LineChart data={data} width={500} height={300}>
-          <Line type="monotone" dataKey="sell"></Line>
+    <div className="md:flex pt-14 w-3/4 mx-auto" >
+      <div className="">
+        <h2 className="text-center text-blue-500 font-semibold mb-3 text-xl">Month wise sell</h2>
+        <LineChart data={data} width={400} height={300}>
+          <Line stroke="#8884d8" type="monotone" dataKey="sell"></Line>
           <XAxis dataKey="month" />
           <YAxis></YAxis>
           <Legend></Legend>
+          
           <CartesianGrid strokeDasharray = "3 3"></CartesianGrid>
           <Tooltip></Tooltip>
         </LineChart>
       </div>
-      <div className="">
-        <h2>invesment vs Revenue</h2>
-        <BarChart width ={500} height ={300} data={data}>
+      <div className="ml-auto">
+        <h2 className="text-center text-blue-500 font-semibold mb-3 text-xl">invesment vs Revenue</h2>
+        <BarChart width ={400} height ={300} data={data}>
         <CartesianGrid strokeDasharray = "3 3"></CartesianGrid>
         <XAxis dataKey ="month"></XAxis>
         <YAxis></YAxis>
